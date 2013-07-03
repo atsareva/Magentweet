@@ -1,0 +1,25 @@
+/**
+ * Magentweet : Twitter Widget for Magento
+ * by
+ * Agence Dn'D - Création site e-Commerce Magento - http://www.dnd.fr/magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * Available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category   Widget
+ * @package    Dnd_Magentweet
+ * @copyright  Copyright (c) 2010 Agence Dn'D (http://www.dnd.fr)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+
+.block-magentweet .block-title strong { background:url(../images/magentweet/bird.gif) no-repeat; padding-left: 20px;}
+.block-magentweet .block-content li { padding:3px 9px;}
+.block-magentweet .block-content img { float:left; margin:5px 5px 0 0; }
+.block-magentweet .block-content ul li div { float:left; width:120px; }
+.block-magentweet .clearer { clear: both; }

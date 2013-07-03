@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<widgets>
+    <magentweet_search type="magentweet/search" translate="name description">
+        <name>Magentweet - Twitter search feed</name>
+        <description>Add twitter search feed</description>
+        <parameters>
+            <keyw>
+                <label>Keyword</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>macbook</value>
+            </keyw>
+            <nb>
+                <label>Number of tweets</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>5</value>
+            </nb>
+            <slang>
+                <label>Langage</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>select</type>
+                <source_model>magentweet/lang</source_model>
+                <description>Select your search language</description>
+            </slang>
+            <titre>
+                <label>Block title</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>Follow us</value>
+            </titre>
+            <link>
+                <label>Links color</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+                <value>#1E7EC8</value>
+            </link>
+            <link_a>
+                <label>Links color for @</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+                <value>#000000</value>
+            </link_a>
+            <desa>
+                <label>Links</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>select</type>
+                <value>Enable</value>
+                <values>
+                    <default translate="label">
+                        <value>enable</value>
+                        <label>Enable</label>
+                    </default>
+                    <list translate="label">
+                        <value>disable</value>
+                        <label>Disable</label>
+                    </list>
+                </values>
+            </desa>
+            <class_css>
+                <label>Add CSS Classes</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+                <value></value>
+            </class_css>
+            <template translate="label" >
+                <label>Template</label>
+                <visible>0</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>magentweet/search.phtml</value>
+            </template>
+        </parameters>
+    </magentweet_search>
+    
+    <magentweet_user type="magentweet/user" translate="name description" >
+        <name>Magentweet - Twitter user feed</name>
+        <description>Add twitter user feed</description>
+        <parameters>
+            <tuser>
+                <label>Twitter user name</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>Magento</value>
+                <description>http://twitter.com/UserName</description>
+            </tuser>
+            <nb>
+                <label>Number of tweets</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>5</value>
+            </nb>
+            <titre>
+                <label>Block title</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>Follow us</value>
+            </titre>
+            <link>
+                <label>Links color</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+                <value>#1E7EC8</value>
+            </link>
+            <link_a>
+                <label>Links color for @</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+                <value>#000000</value>
+            </link_a>
+            <desa>
+                <label>Links</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>select</type>
+                <value>Enable</value>
+                <values>
+                    <default translate="label">
+                        <value>enable</value>
+                        <label>Enable</label>
+                    </default>
+                    <list translate="label">
+                        <value>disable</value>
+                        <label>Disable</label>
+                    </list>
+                </values>
+            </desa>
+            <user_header>
+                <label>User Header</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>select</type>
+                <value>Enable</value>
+                <values>
+                    <default translate="label">
+                        <value>enable</value>
+                        <label>Enable</label>
+                    </default>
+                    <list translate="label">
+                        <value>disable</value>
+                        <label>Disable</label>
+                    </list>
+                </values>
+            </user_header>
+            <class_css>
+                <label>Add CSS Classes</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+                <value></value>
+            </class_css>
+            <template translate="label" >
+                <label>Template</label>
+                <visible>0</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>magentweet/user.phtml</value>
+            </template>
+        </parameters>
+    </magentweet_user>
+
+</widgets> 

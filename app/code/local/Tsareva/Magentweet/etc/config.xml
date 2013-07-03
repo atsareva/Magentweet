@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Dnd
+ *
+ * 
+ */
+-->
+<config>
+    <modules>
+        <Tsareva_Magentweet>
+            <version>0.0.1</version>
+        </Tsareva_Magentweet>
+    </modules>
+    <global>
+        <helpers>
+            <magentweet>
+                <class>Tsareva_Magentweet_Helper</class>
+            </magentweet>
+        </helpers>
+        <blocks>
+            <magentweet>
+                <class>Tsareva_Magentweet_Block</class>
+            </magentweet>
+        </blocks>
+        <models>
+            <magentweet>
+                <class>Tsareva_Magentweet_Model</class>
+            </magentweet>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <magentweet>
+                    <file>magentweet.xml</file>
+                </magentweet>
+            </updates>
+        </layout>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Tsareva_Magentweet>
+                    <files>
+                        <default>Dnd_Magentweet.csv</default>
+                    </files>
+                </Tsareva_Magentweet>
+            </modules>
+        </translate>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <magentweet_settings>
+                                            <title>Magentweet Configuration</title>
+                                        </magentweet_settings>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config> 
